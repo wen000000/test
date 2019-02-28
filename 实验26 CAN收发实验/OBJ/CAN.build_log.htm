@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: wen Microsoft, Microsoft, LIC=X1EWF-6QGNU-054TY-I7CYZ-RP71V-0LZ1J
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Lyq\Desktop\实验26 CAN收发实验\USER\CAN.uvprojx
+Project File Date:  07/24/2015
+
+<h2>Output:</h2>
+Build target 'CAN'
+compiling CAN_MCP2515.c...
+..\can\can_mcp2515.h(23): error:  #20: identifier "bool" is undefined
+  bool MCP2515_Init(void);
+..\can\can_mcp2515.h(24): error:  #20: identifier "bool" is undefined
+  bool MCP2515_Can_Send_Msg(_MCP2515_CAN_MSG *msg);  
+..\can\CAN_MCP2515.c(172): error:  #20: identifier "bool" is undefined
+  static bool Spi1_Init(void)
+..\can\CAN_MCP2515.c(183): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+      RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC|RCC_AHB1Periph_GPIOA, ENABLE);
+..\can\CAN_MCP2515.c(183): error:  #20: identifier "RCC_AHB1Periph_GPIOC" is undefined
+      RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC|RCC_AHB1Periph_GPIOA, ENABLE);
+..\can\CAN_MCP2515.c(183): error:  #20: identifier "RCC_AHB1Periph_GPIOA" is undefined
+      RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC|RCC_AHB1Periph_GPIOA, ENABLE);
+..\can\CAN_MCP2515.c(187): warning:  #223-D: function "GPIO_PinAFConfig" declared implicitly
+      GPIO_PinAFConfig(GPIOA, GPIO_PinSource5, GPIO_AF_SPI1);
+..\can\CAN_MCP2515.c(187): error:  #20: identifier "GPIO_AF_SPI1" is undefined
+      GPIO_PinAFConfig(GPIOA, GPIO_PinSource5, GPIO_AF_SPI1);
+..\can\CAN_MCP2515.c(193): error:  #20: identifier "GPIO_Mode_AF" is undefined
+      GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+..\can\CAN_MCP2515.c(195): error:  #136: struct "<unnamed>" has no field "GPIO_OType"
+      GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+..\can\CAN_MCP2515.c(195): error:  #20: identifier "GPIO_OType_PP" is undefined
+      GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+..\can\CAN_MCP2515.c(196): error:  #136: struct "<unnamed>" has no field "GPIO_PuPd"
+      GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_DOWN;
+..\can\CAN_MCP2515.c(196): error:  #20: identifier "GPIO_PuPd_DOWN" is undefined
+      GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_DOWN;
+..\can\CAN_MCP2515.c(201): error:  #20: identifier "GPIO_Mode_OUT" is undefined
+      GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+..\can\CAN_MCP2515.c(203): error:  #136: struct "<unnamed>" has no field "GPIO_OType"
+      GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+..\can\CAN_MCP2515.c(204): error:  #136: struct "<unnamed>" has no field "GPIO_PuPd"
+      GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+..\can\CAN_MCP2515.c(204): error:  #20: identifier "GPIO_PuPd_NOPULL" is undefined
+      GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
+..\can\CAN_MCP2515.c(231): error:  #20: identifier "true" is undefined
+      return true;
+..\can\CAN_MCP2515.c(269): error:  #20: identifier "bool" is undefined
+  static bool MCP2515_WriteReg(u8 reg,u8 data)
+..\can\CAN_MCP2515.c(282): error:  #20: identifier "true" is undefined
+      return true;
+..\can\CAN_MCP2515.c(379): error:  #20: identifier "bool" is undefined
+  static bool MCP2515_BitModify(u8 reg,u8 BitSel,u8 BitSta)
+..\can\CAN_MCP2515.c(396): error:  #20: identifier "true" is undefined
+      return true;
+..\can\CAN_MCP2515.c(407): error:  #20: identifier "bool" is undefined
+  static bool MCP2515_WriteReg_Seq(u8 reg,u8 *data,u8 length)
+..\can\CAN_MCP2515.c(410): error:  #20: identifier "NULL" is undefined
+      if( NULL == data )return false;
+..\can\CAN_MCP2515.c(410): error:  #20: identifier "false" is undefined
+      if( NULL == data )return false;
+..\can\CAN_MCP2515.c(422): error:  #20: identifier "true" is undefined
+      return true;
+..\can\CAN_MCP2515.c(434): error:  #20: identifier "bool" is undefined
+  static bool MCP2515_ReadReg_Seq(u8 reg,u8 *data,u8 length)
+..\can\CAN_MCP2515.c(437): error:  #20: identifier "NULL" is undefined
+      if( NULL == data) return false;
+..\can\CAN_MCP2515.c(437): error:  #20: identifier "false" is undefined
+      if( NULL == data) return false;
+..\can\CAN_MCP2515.c(449): error:  #20: identifier "true" is undefined
+      return true;
+..\can\CAN_MCP2515.c(458): error:  #20: identifier "bool" is undefined
+  static bool MCP2515_Reset(void)
+..\can\CAN_MCP2515.c(466): error:  #20: identifier "true" is undefined
+      return true;
+..\can\CAN_MCP2515.c: 2 warnings, 30 errors
+"..\OBJ\CAN.axf" - 30 Error(s), 2 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Lyq\Desktop\实验26 CAN收发实验\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
